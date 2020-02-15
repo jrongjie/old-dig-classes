@@ -1,0 +1,32 @@
+//note that this kind of comment won't make through the preprocessor
+/*the standard CSS comments will show up on the output
+.css file*/
+
+//imports mixins to this scss file
+@import "variables";
+@import "mixins";
+
+.list{
+  //includes the mixin for list format
+  @include liformat;
+}
+//includes the mixin for grid format
+@include grid;
+/*formats the grid item*/
+    .grid-item {
+      background-color:$bgcolorgrit;
+      border: 1px solid $bgcolorborder;
+      margin:10px;
+    }
+
+p {
+  color: $pcolor;
+  font-size: $lisize;
+  border: $border;
+  padding: 15px;
+}
+
+h1 {
+  color: $h1color;
+  font-size: $ulsize;
+}

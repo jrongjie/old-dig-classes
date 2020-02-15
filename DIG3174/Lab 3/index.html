@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head section contains metadata (not displayed in page)-->
+  <head>
+    <!--a (more or less) universal character set which allows most
+   languages to be displayed -->
+    <meta charset="utf-8">
+    <!--sets the viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--The title (to be displayed in the tab)-->
+    <title>Edzel's Invisible Oddities!</title>
+    <!--links to favicon in img folder-->
+    <link rel="shortcut icon" href="img/icon.ico" />
+    <!--Links to main stylesheet in style folder-->
+    <link rel="stylesheet" href="style/main.css">
+  </head>
+  <!--body section which contains content-->
+  <body background="img/bg.png">
+    <!--nav element which is given the grid-nav class-->
+    <nav class ="grid-nav">
+      <!--nav bar links formatted as children of grid-nav-->
+      <a href= "index.html">
+        <!-- child elements.  Putting the div in the nav makes the entire div a link.-->
+        <!-- the current class allows the css to make the current page styled differently-->
+        <div class ="nav-item current">
+          <p class ="nav">Home</p>
+        </div>
+      </a>
+
+      <a href= "location.html">
+        <div class ="nav-item">
+          <p class ="nav">Find Us!</p>
+        </div>
+      </a>
+
+      <a href= "gallery.html">
+        <div class ="nav-item">
+         <p class ="nav">Attractions</p>
+        </div>
+      </a>
+      <a href= "about.html">
+        <div class ="nav-item">
+          <p class ="nav">Our Story</p>
+        </div>
+      </a>
+    </nav>
+    <!--div which has been given the parent class grid-->
+    <div class ="grid header">
+      <!--child div given 2 classes-->
+      <div class = "grid-item spacer">
+        <!--this div exists to format with media queries-->
+      </div>
+      <!--grid-item child to hold content-->
+      <div class="grid-item">
+        <h1>Edzel's Invisible Oddities</h1>
+        <h2>Not seeing is believing</h2>
+      </div>
+      <!--child div given 2 classes-->
+      <div class = "grid-item spacer">
+        <!--this div exists to format with media queries-->
+      </div>
+    </div>
+    <div class="grid">
+      <div class="grid-item">
+        <h2> Sights that you cannot see. </h2>
+        <p>There is a place just of of I-π where you can behold some of the most amazing attractions
+        ever collected in one place.  All it takes is a little belief...and a $14.08 admission fee.
+        Other attractions in the Falske, Florida area CLAIM to have the best roadside wonders, but
+        I can tell you are a person of integrity, with fine tastes and an understanding that money
+        is best spent seeing something amazing.  Look no further.</p>
+      </div>
+      <div class ="grid-item">
+        <h2>Our Glorious Establishment</h2>
+        <img src="img/main.jpg" alt="Edzel's Invisible Oddities front view">
+      </div>
+      <div class="grid-item">
+        <h2>Wonders beyong imagining</h2>
+        <p>I have scoured the world for the very best in invisible oddities.  From the Orthogonal
+          Forests of Tibet to the Unlikely Iceberg of the Amazon Basin, I used the latest technophlogy
+          to find wonders that all happen to be invisible to the naked eye.  The great transparent grizzly
+          from the Yuokn nearly ate me.  I almost passed out when the clear anaconda of East Lansing, Michigan
+          coiled around me, but I did it to bring all these wonders together for you to visit.  This is not
+          an empty room, I promise you that!</p>
+      </div>
+    </div>
+  </body>
+</html>

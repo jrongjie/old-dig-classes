@@ -1,0 +1,45 @@
+//style mixin for list formatting
+@mixin liformat{
+  /*formats the lsit*/
+  ul{
+    //calls the ulsize variable which is set by the number you put in
+    font-size: $ulsize;
+    //sets the font for ul (which is then inherited by li)
+    font-family:$ulfont;
+    //sets the color based on your choice
+    color:$ulcolor;
+
+      li{
+        //calls the lisize variable which is based on ulsize
+        font-size: $lisize;
+      }
+    }
+  .standard{
+    //sets the color based on ulcolor
+    color:$licolor;
+  }
+  .different{
+    //sets a different color based on ulcolor
+    color:$licolordiff;
+    background-color:$licolor;
+  }
+
+}
+//grid mixin
+@mixin grid{
+  /*media query for grid*/
+  @media screen and (max-width: $screen){
+    .grid {
+      display: grid;
+      grid-template-columns: auto;
+      background-color: $bgcolorgr;
+    }
+  }
+  @media screen and (min-width: $screen){
+    .grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      background-color: $bgcolorgr;
+      }
+  }
+}

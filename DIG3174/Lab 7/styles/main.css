@@ -1,0 +1,92 @@
+/*imports normalize*/
+@import "normalize.css";
+
+/*link management*/
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: rgba(0, 150, 0, 0.5);
+    grid-gap: 10px;
+  }
+
+  .par {
+    margin-top: 50px;
+    text-align: justify !important;
+    padding: 10px;
+  }
+
+  .start {
+    text-align: justify !important;
+    padding: 10px;
+  }
+
+  .top {
+    margin-top: 10px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+
+  /*background nav*/
+  nav {
+    /*root directory up one level*/
+    background-image: url(../img/trees.jpg);
+    background-size: 100%;
+    background-origin: content;
+    background-repeat: no-repeat;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgba(0, 150, 0, 0.5);
+    grid-gap: 10px;
+  }
+
+  .par {
+    grid-column: 1/4;
+    text-align: justify !important;
+    padding: 10px;
+  }
+
+  .start {
+    grid-column: 1/4;
+    text-align: justify !important;
+    padding: 10px;
+  }
+
+  .top {
+    grid-column: 1/4;
+    margin-top: 50px;
+    padding: 10px;
+  }
+}
+
+.grid-item {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,37 @@
+@import "normalize.css";
+
+
+@media screen and (max-width: 600px){
+    .grid{
+        display: grid;
+        grid-template-columns: auto;
+        background-color: blanchedalmond;
+        padding: 10px;
+    }
+}
+@media screen and (min-width: 600px){
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: blanchedalmond;
+        padding: 10px;
+    }
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+.grid-item{
+    background-color: rgba(59, 71, 179, 0.5);
+    border: 2px dotted rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 25px;
+    text-align: right;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+}

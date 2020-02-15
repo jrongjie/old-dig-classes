@@ -1,0 +1,20 @@
+//typography
+$ulsize: 30px;
+$lisize: round($ulsize*.8);
+$ulfont: Georgia;
+
+//colors
+$ulcolor: #AFB4C3;
+$licolor: complement($ulcolor);
+$licolordiff: invert($ulcolor);
+$bgcolorgrit: invert(grayscale($ulcolor));
+$bgcolorgr: mix($ulcolor, $bgcolorgrit, 20);
+$bgcolorborder: adjust-hue($bgcolorgr, 20);
+
+//screensize
+$screen: 1000px;
+
+//my variables
+$pcolor: #511903;
+$h1color: #872700;
+$border: dashed 2px grey;

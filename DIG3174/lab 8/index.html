@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head section contains metadata (not displayed in page)-->
+
+<head>
+  <!--Title displayed in browser tab-->
+  <title>Sassy Styling Stuff</title>
+  <!--Viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--css-->
+  <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+<article class="grid">
+      <div class="grid-item list">
+        <ul>This list represents how we can apply various bits of
+          functionality within SCSS files.
+            <li class="standard"> We can make values of variables
+            dependent on other variables.</li>
+            <li class="standard"> These list items get their size based on how big the UL above is.
+            </li>
+            <li class="different"> Building size dependencies into your variables
+            can make adjusting numerous sizes very easy.</li>
+        </ul>
+      </div>
+            <div class="grid-item list">
+              <ul>You can also use SASS to define colors using variables.
+                  <li class="standard"> There is a single variable that controls
+                    all the other ones.</li>
+                  <li class="standard"> Using commands like complement and invert, values of
+                    the color can be changed.</li>
+                  <li class="different"> There are a lot of options on how you can adjust these.</li>
+              </ul>
+              </div>
+    </article>
+
+    <h1>With that in mind, you can make some changes based on the examples in the main, variables,
+    and mixins files.  Try this out by changing the vaules of the variables:
+    "$ulcolor" and "ulsize."</h1>
+
+    <p>Once you get done with that, do some formatting on this text.  Note that it is plain text,
+    not even in a specific HTML tag.  Put these bits of text into some tags (your choice).  Then,
+    create a mixin to get some style on this.  Make some variables to assign those values.  You don't have
+    to make each variable completely dependent on other variables (like above), but do understand how
+    that works.</p>
+  </body>
+</html>
