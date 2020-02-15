@@ -1,0 +1,33 @@
+body {
+  background: linear-gradient(to top, rgba(53, 92, 125, 0.5), rgba(108, 91, 123, 0.5), rgba(192, 108, 132, .5));
+}
+
+h1 {
+  font-family: serif;
+  font-size: 1.4em;
+}
+
+table {
+  background-color: rgba(255, 255, 255, .7);
+  font-family: sans-serif;
+  border-color: rgba(192, 108, 132, 1);
+  border-collapse: collapse;
+}
+  th {
+    padding: 4px 10px 4px 10px;
+    text-align: center;
+  }
+  td {
+    padding: 5px;
+    text-align: center;
+  }
+
+/*fancy-shmancy stuff*/
+  /*stripped effect*/
+  tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, .5);
+  }
+  /*pop-out for row*/
+  tr:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }

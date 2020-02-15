@@ -1,0 +1,40 @@
+body {
+  background: #c2dbb4 ;
+  max-width: 800px;
+  margin: auto;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+h1 {
+  font-family: serif;
+  font-size: 1.4em;
+}
+
+table {
+  background-color: white;
+  font-family: sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #3f3f3f;
+}
+  th {
+    padding: 4px 10px 4px 10px;
+    text-align: center;
+    border: 1px solid #3f3f3f;
+  }
+  td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+  }
+form {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
