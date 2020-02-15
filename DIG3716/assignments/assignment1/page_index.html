@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 1- Jennifer Gardner</title>
+    <script type="text/javascript">
+
+var mainMenu;
+
+  //Program Main Menu LOOP until exit//  --> enter program
+      while (mainMenu !== "Exit") {
+    //PROMPT user to enter 1, 2, 3, or exit
+        mainMenu = prompt("Enter: 1, 2, 3, or Exit", "");
+        switch (mainMenu) {
+      //program1
+          case "1":
+            var userSentence= prompt("Enter a string to be translated!");
+          if (userSentence == "") {
+            console.log("You need to enter something");
+          }
+          break;
+      //program2
+          case "2":
+          if (userSentence == undefined) {
+            console.log("You need to first enter a string");
+          } else {
+            var robotLang = userSentence.split(" ");
+            var i;
+
+            for (var i = 0; i <= robotLang.length-1; i++) {
+              if (robotLang.length[i]<5) {
+                robotLang[i] = robotLang[i]+"-boink";
+              } else if(robotLang[i].length>=5){
+                robotLang[i] = robotLang[i]+"-bork";
+              }
+            //var translated = robotLang.join(" ");
+            }
+            var translated = robotLang.join(" ");
+            console.log("String converted");
+          }
+            break;
+
+      //program3
+          case "3":
+          if (translated == undefined) {
+            console.log("You need to first convert your String!");
+          } else if (translated !== undefined){
+            console.log(translated);
+            userSentence = undefined;
+            translated = undefined;
+          }
+            break;
+
+      //exit
+          case "Exit":
+            console.log("Thanks for using the ROBOT Language Converter!");
+            break;
+        }
+      }
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

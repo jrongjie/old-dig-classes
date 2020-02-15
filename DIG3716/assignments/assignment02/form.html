@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey - Jennifer Gardner</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/process_form.js"></script>
+  </head>
+  <body>
+    <form method="post" name="survey">
+      <header>
+        <h1>What Motivates You?</h1>
+      </header>
+      <fieldset class="contact">
+        <legend>Personal Info</legend>
+        <div id="firstN">
+          <label>First Name</label>
+          <br>
+          <input type="text" name="first" id="first" value="">
+          <span id="firstHint">
+          </span>
+        </div>
+        <div id="lastN">
+          <label>Last Name</label>
+          <br>
+          <input type="text" name="last" id="last" value="">
+          <span id="lastHint">
+          </span>
+        </div>
+        <div id="phoneN">
+          <label>Phone Number</label>
+          <br>
+          <input type="text" name="phone" id="phone" value="">
+          <span id="phoneHint">
+          </span>
+        </div>
+        <div id="emailA">
+          <label>Email Address</label>
+          <br>
+          <input type="text" name="email" id="email" value="">
+          <span id="emailHint">
+          </span>
+        </div>
+        <div id="studentsA">
+          <label>Students Address</label>
+          <br>
+          <input type="text" name="students" id="students" value="">
+          <span id="studentsHint">
+          </span>
+        </div>
+      </fieldset>
+      <!--survey section-->
+      <fieldset class="surveyQuestions">
+          <legend>Questions</legend>
+          <div class="question">
+            <label>If I'm running a race, I will run because...</label>
+            <br>
+            <input type="radio" name="q1" value="intrinsic"> I am having a good time.
+            <br>
+            <input type="radio" name="q1" value="extrinsic"> I want to win the race.
+          </div>
+
+          <div class="question">
+            <label>I clean my room, because...</label>
+            <br>
+            <input type="radio" name="q2" value="extrinsic"> I don't want to be yelled at to clean my room.
+            <br>
+            <input type="radio" name="q2" value="intrinsic"> I enjoy having a clean room.
+          </div>
+
+          <div class="question">
+            <label>If I get a bad grade on an assignment...</label>
+            <br>
+            <input type="radio" name="q3" value="extrinsic"> I leave it be.
+            <br>
+            <input type="radio" name="q3" value="intrinsic"> I get help to figure out what I got wrong and why.
+          </div>
+
+          <div class="question">
+            <label>I study the extra material becuase...</label>
+            <br>
+            <input type="radio" name="q4" value="extrinsic"> I want to get good grades.
+            <br>
+            <input type="radio" name="q4" value="intrinsic"> I find the subject interesting.
+          </div>
+
+          <div class="question">
+            <label>I would help tutor someone, because...</label>
+            <br>
+            <input type="radio" name="q5" value="intrinsic"> I will get self satisfaction out of helping them.
+            <br>
+            <input type="radio" name="q5" value="extrinsic"> I will get paid to do so.
+          </div>
+
+        <input type="submit" name="sumbit" value="Submit Survey">
+        <div id="badgeArea">
+        </div>
+      </fieldset>
+      <footer>Created by Jennifer Gardner</footer>
+    </form>
+  </body>
+</html>

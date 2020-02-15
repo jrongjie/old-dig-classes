@@ -1,0 +1,45 @@
+/*general formating: spacing, color*/
+body {
+  background: #235E94 ;
+  max-width: 600px;
+  margin: auto;
+}
+form {
+  margin-top: 20px;
+  padding: 10px;
+  border: 5px solid #C9E5FF;
+  background-color: white;
+}
+  header, footer {
+    display: flex;
+    justify-content: center;
+  }
+    .contact {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-column-gap: 10px;
+    }
+  span {
+    grid-column: 2/1;
+  }
+  legend {
+    text-align: center;
+    margin: 10px;
+  }
+  label {
+    margin: 3px;
+  }
+  div {
+    margin-bottom: 10px;
+  }
+img {
+  display: inline-flex;
+  align-self: center;
+}
+/*text*/
+h1, header, footer, p, div, span, legend, input, label {
+  font-family: sans-serif;
+}
+  footer {
+    font-size: .8em;
+  }

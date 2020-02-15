@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 1- Briana Walker</title>
+<script>
+var current;
+var strOne = "";
+
+do{
+  current = prompt("Enter either 1, 2, 3 or Exit", "");
+
+  if (current == "1"){
+    while(strOne == ""){
+      strOne = prompt("Enter a string", "");
+      console.log(strOne);
+
+      if(strOne == "")
+        console.log("Please enter a string.");
+        continue;
+    }
+  }
+
+
+  else if (current == "2") {
+    if (strOne == "") {
+      console.log("You need to first enter a string.");
+
+    }
+
+    else {
+      var robot = strOne.split(" ");
+      var i;
+
+      for(i=0; i<=robot.length-1; i++) {
+
+        if (robot[i].length>=5) {
+          robot[i] += "-bork";
+        }
+        else if (robot[i].length < 5) {
+          robot[i] += "-boink";
+        }
+        var strTwo = robot.join(" ");
+
+      }
+      console.log("String converted");
+    }
+}
+
+    else if (current == "3") {
+      if(strTwo == ""){
+        console.log("Please convert the string");
+        continue;
+  }
+    else {
+      console.log(strTwo);
+      strOne= "";
+      strTwo= "";
+      continue;
+    }
+  }
+
+  if(current == "Exit") {
+    console.log("Thanks for using the ROBOT Language Converter!.")
+    break;
+  }
+
+}
+while(current!="");
+
+
+</script>
+</head>
+
+<body>
+
+</body>
+
+</html>
