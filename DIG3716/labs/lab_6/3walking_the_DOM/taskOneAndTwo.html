@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript test page.</title>
+<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+  <div>Users:</div>
+  <ul>
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+
+<script type="text/javascript">
+
+for (let node of document.body.childNodes){
+  console.log(node);
+}
+//Task 1
+  //How to access...
+  //the div DOM node?
+    alert(document.body.firstElementChild);
+
+  // the ul DOM node?
+    alert(document.body.children[1]);
+
+  //The second li (with Pete)?
+    alert(document.body.children[2].lastChild); //gets Pete as #text
+
+//Task 2
+  //if elem is an arbitrary DOM element node...
+  //Is it true that elem.lastChild.nextSibling is always null?
+    //yes, because it is the last child element, if a next sibling existed, then it would not be the last child
+
+  //Is it true that elem.children[0].previousSibling is always null?
+    //no, because there could be a text or comment node, which aren't classified as elements
+
+  //Task 3
+  //write the code to paint all diagonal table cells in red
+  //You'll need to get all diagonal td from the table and paint them using the code
+    //td.style.backgroundColor = "red";
+
+</script>
+
+</body>
+</html>
