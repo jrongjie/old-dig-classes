@@ -1,0 +1,112 @@
+/* applicable to ALL pages...*/
+body { background-image: url("../images/road_and_mountain.jpg");
+width: 804px;
+margin: 0 auto;
+margin-top: 10px;}
+
+/*...text*/
+li {font-family: Verdana;
+font-size: 1.8em;
+text-align: left;}
+  li.title {background-color: black;
+  color: white;}
+  a, a:visited, a:active {color: black;
+  text-decoration: none;}
+    a:hover {color: orange;}
+
+p {font-family: Times;}
+
+/*...look*/
+nav {background-color: white;
+width: 200px;
+height: 323px;
+border: 2px solid black;
+margin: 0;
+padding: 0;
+display: inline-block;}
+  ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-position: outside;}
+    li {
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding: 2px 0px 2px 4px;
+    list-style-type: none;}
+      li.title {
+      text-align: center;
+      padding: 10px;}
+
+/*does not include lifestyle page
+(has own look due to bottom margin)*/
+.writtenContent {background-color: white;
+width: 764px;
+border: 2px solid black;
+margin: 0;
+padding: 30px 20px 30px 20px;
+display: inline-block;}
+
+.mainImage {
+width: 600px;
+height: 323px;
+position: absolute;
+border: 2px solid black;
+background-repeat: no-repeat;}
+  /* -4px to eliminate the gap between pic and menu bar,
+  screws with firefox*/
+  @media screen and (-webkit-min-device-pixel-ratio:0){
+  .mainImage{margin-left: -4px;}}
+  @-moz-document url-prefix() {{}
+  .mainImage {margin: 0;}}
+
+/*applied to HOME page only*/
+.homeImage {background-image: url("../images/duece.jpg");
+background-size: 630px 469px;
+background-position: -5px -40px;}
+
+/*applied to RODS page only*/
+.rodsImage {background-image: url("../images/many_rods_01.jpg");
+background-size: 1025px 800px;
+background-position: -50px -296px;}
+
+  .RThumbnailImg {
+  width: 230px;
+  height: 150px;
+  border: 2px solid black;
+  margin-left: 10px;
+  float: right;
+  display: inline;}
+
+/*applied to LIFESTYLE page only*/
+.lifestyleImage {background-image: url("../images/many_rods_02.jpg");
+background-size: 700px 520px;
+background-position: -95px -82px;}
+
+  .lifestylewrittenContent {background-color: white;
+  width: 764px;
+  border: 2px solid black;
+  margin: 0;
+  padding: 30px 20px 0px 20px;
+  display: inline-block;}
+    .LThumbnailImgs {
+    width: 150px;
+    height: 139px;
+    border: 2px solid #8ABE67;
+    float: left;
+    overflow: hidden;
+    background-repeat: no-repeat;}
+      .LTI2, .LTI3, .LTI4 {
+      margin-left: 10px;}
+        .LTI1 {background-image: url("../images/tbucket.jpg");
+        background-size: 210px 150px;
+        background-position: -17px -3px;}
+        .LTI2 {background-image: url("../images/flathead.jpg");
+        background-size: 190px 145px;
+        background-position: -17px -5px;}
+        .LTI3 {background-image: url("../images/cobra_power.jpg");
+        background-size: 220px 167px;
+        background-position: -16px -9px;}
+        .LTI4 {background-image: url("../images/pickup_01.jpg");
+        background-size: 225px 168px;
+        background-position: -16px -10px;}
